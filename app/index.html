@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="row">
-        <div class="col-3">
-            <div class="left-bar">
+        <div class="col-2 p-0">
+            <div class="left-bar d-flex flex-column justify-content-between">
                 <div class="left-bar_top">
                     <div class="left-bar__header">
                         <h1 class="left-bar__title">LIMS</h1>
@@ -35,23 +35,206 @@
                 </div>
             </div>
         </div>
-        <div class="col-9">
-            <header class="header">
+        <div class="col-10 p-0">
+            <header class="header d-flex justify-content-between align-items-center">
                 <div class="header__left d-flex align-items-center">
-                    <button class="header__button"></button>
+                    <button class="header__button btn p-0"><span class="header__button-row"></span></button>
                     <nav class="header__nav">
-                        <ul class="header__nav-list d-flex align-items-center">
-                            <li class="header__nav-item"><a class="header__nav-link" href="#">Instruments</a></li>
+                        <ul class="header__nav-list d-flex justify-content-between align-items-center m-0">
+                            <li class="header__nav-item header__nav-item-drop"><a class="header__nav-link" href="#">Instruments</a></li>
                             <li class="header__nav-item"><a class="header__nav-link" href="#">Widgets</a></li>
                             <li class="header__nav-item"><a class="header__nav-link" href="#">View</a></li>
                             <li class="header__nav-item"><a class="header__nav-link" href="#">Administration</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header__right d-flex align-items-center"></div>
-
-
+                <div class="header__right d-flex align-items-center">
+                    <div class="header__list-info header__user header__left-border">
+                        <span class="header__user-name">Alexander</span>
+                    </div>
+                    <div class="header__list-info header__language header__left-border">
+                        <select class="header__language-list" name="language">
+                            <option value="1" SELECTED>ENG</option>
+                            <option value="3">RU</option>
+                        </select>
+                    </div>
+                    <div class="header__list-info header__lock header__left-border">
+                        <img class="header__lock-img" src="./images/unlock.png" alt="unlock">
+                    </div>
+                </div>
             </header>
+            <main>
+                <div class="row">
+                    <div class="col-2 p-0">
+                        <section class="status padding-20">
+                            <div class="status__item">
+                                   <div class="status__header d-flex align-items-center">
+                                       <span class="status__info status__info--completed"></span><h2 class="status__title">Sampler</h2>
+                                   </div>
+                                   <div class="status__content">
+                                       <img class="status__img" src="./images/sampler-icon.svg" alt="sample">
+                                   </div>
+                               </div>
+                            <div class="status__item">
+                                <div class="status__header d-flex align-items-center">
+                                    <span class="status__info status__info--completed"></span><h2 class="status__title">Sampler</h2>
+                                </div>
+                                <div class="status__content">
+                                    <img class="status__img" src="./images/sampler-icon.svg" alt="sample">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-10  p-3 ps-0">
+                        <div class="wrap border">
+                            <div class="nav-container border-bottom">
+                                <ul class="nav-container__list d-flex p-0 m-0">
+                                    <li class="nav-container__item">Worklist <span class="nav-container__run"> RUN </span> TO DO: 23 injections 02:15</li>
+                                    <li class="nav-container__item nav-container__item--active">Method:  Method1.amx (00:00/04:30)</li>
+                                    <li class="nav-container__item">single run</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-2 border-end p-0">
+                                    <ul class="nav-list">
+                                        <li class="nav-list__item" data-nav="1">ALS</li>
+                                        <li class="nav-list__item nav-list__item--active" data-nav="2">Inlets</li>
+                                        <li class="nav-list__item" data-nav="3">Columns</li>
+                                    </ul>
+                                </div>
+                                <div class="col-10 bg-white">
+                                   <section class="content">
+                                       <div class="row">
+                                           <div class="col-6 border-end p-3">
+                                               <div class="row mb-5">
+                                                   <div class="col-8 p-0">
+                                                       <div class="content__card d-flex">
+                                                           <div class="content__card-item d-flex flex-column justify-content-start align-items-center">
+                                                               <p class="content__card-title mb-2">Front Inlet</p>
+                                                               <img class="content__card-img mb-2" src="./images/CompositeLayer.png" alt="CompositeLayer">
+                                                               <p class="content__card-description m-0">SS (H2)</p>
+                                                           </div>
+                                                           <div class="content__card-item d-flex flex-column jjustify-content-start align-items-center">
+                                                               <p class="content__card-title mb-2">Front Inlet</p>
+                                                               <img class="content__card-img mb-2" src="./images/crug.png" alt="crug">
+                                                               <p class="content__card-description content__card-description-info m-0">60 Oc - 450 Oc (450 Oc)
+                                                                   <br> 25 m * 320 μm * 1μm</p>
+                                                           </div>
+                                                           <div class="content__card-item d-flex flex-column justify-content-start align-items-center">
+                                                               <p class="content__card-title mb-2">Front Inlet</p>
+                                                               <img class="content__card-img mb-2" src="./images/lupa.png" alt="lupa">
+                                                               <p class="content__card-description m-0">SS (H2)</p>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                                   <div class="col-4">
+                                                       <div class="content__card-item-text">
+                                                           (Initial): 0 min <br> ArMe @ 35 Oc Oven <br> Out: Ambient Pressure
+                                                           <br> 25 m * 320 μm * 1μm
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="row">
+                                                   <div class="col">
+                                                        <div class="title">
+                                                            <div class="title__row"></div>
+                                                            <h2 class="title__text">Control Mode</h2>
+                                                        </div>
+                                                       <div class="row pt-3">
+                                                           <div class="checkbox mb-3">
+                                                               <label class="checkbox__label">
+                                                                   <input class="checkbox__input" type="checkbox" name="control-mode">
+                                                                   On
+                                                               </label>
+                                                           </div>
+                                                           <div class="col-6">
+                                                               <div class="control row mb-3">
+                                                                   <div class="col-5">
+                                                                       <span class="control__title">Flow</span>
+                                                                   </div>
+                                                                   <div class="col-4">
+                                                                       <input type="text" class="control__input w-100 px-2" value="16.849">
+                                                                   </div>
+                                                                   <div class="col-3 ps-2">
+                                                                       <span class="control__magnitudes">
+                                                                           mL/min
+                                                                       </span>
+                                                                   </div>
+                                                               </div>
+                                                               <div class="control row mb-3">
+                                                                   <div class="col-5">
+                                                                       <span class="control__title">Pressure</span>
+                                                                   </div>
+                                                                   <div class="col-4">
+                                                                       <input type="text" class="control__input w-100 px-2" value="21.756">
+                                                                   </div>
+                                                                   <div class="col-3 ps-2">
+                                                                       <span class="control__magnitudes">
+                                                                           psi
+                                                                       </span>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                           <div class="col-6">
+                                                               <div class="control row mb-3">
+                                                                   <div class="col-5">
+                                                                       <span class="control__title">Average Velocity</span>
+                                                                   </div>
+                                                                   <div class="col-4">
+                                                                       <input type="text" class="control__input w-100 px-2" value="198.05">
+                                                                   </div>
+                                                                   <div class="col-3 ps-2">
+                                                                       <span class="control__magnitudes">
+                                                                           cm/sec
+                                                                       </span>
+                                                                   </div>
+                                                               </div>
+                                                               <div class="control row mb-3">
+                                                                   <div class="col-5">
+                                                                       <span class="control__title">Holdup Time</span>
+                                                                   </div>
+                                                                   <div class="col-4">
+                                                                       <input type="text" class="control__input w-100 px-2" value="0.21038">
+                                                                   </div>
+                                                                   <div class="col-3 ps-2">
+                                                                       <span class="control__magnitudes">
+                                                                          min
+                                                                       </span>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="col-6">
+                                                   <div class="title mb-3">
+                                                       <div class="title__row"></div>
+                                                       <h2 class="title__text">Post Run</h2>
+                                                   </div>
+                                                   <div class="control row mb-3">
+                                                       <div class="col-5">
+                                                           <span class="control__title">Flow</span>
+                                                       </div>
+                                                       <div class="col-4">
+                                                           <input type="text" class="control__input w-100 px-2" value="16.849">
+                                                       </div>
+                                                       <div class="col-3 ps-2">
+                                                                       <span class="control__magnitudes">
+                                                                           mL/min
+                                                                       </span>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="col-6 p-3"></div>
+                                       </div>
+                                   </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
     <script src="js/main.min.js"></script>
