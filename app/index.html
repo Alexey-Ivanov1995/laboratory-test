@@ -63,8 +63,10 @@
                     </div>
                 </div>
             </header>
+            <!-- main -->
             <main>
                 <div class="row">
+                    <!-- column menu -->
                     <div class="col-2 p-0">
                         <section class="status padding-20">
                             <div class="status__item">
@@ -85,8 +87,12 @@
                             </div>
                         </section>
                     </div>
+                    <!-- end column menu -->
+
+                    <!-- left content -->
                     <div class="col-10  p-3 ps-0">
                         <div class="wrap border">
+                            <!-- nav left-top -->
                             <div class="nav-container border-bottom">
                                 <ul class="nav-container__list d-flex p-0 m-0">
                                     <li class="nav-container__item">Worklist <span class="nav-container__run"> RUN </span> TO DO: 23 injections 02:15</li>
@@ -94,7 +100,9 @@
                                     <li class="nav-container__item">single run</li>
                                 </ul>
                             </div>
+                            <!-- end nav left-top -->
                             <div class="row">
+                                <!-- nav left-column -->
                                 <div class="col-2 border-end p-0">
                                     <ul class="nav-list">
                                         <li class="nav-list__item" data-nav="1">ALS</li>
@@ -102,7 +110,10 @@
                                         <li class="nav-list__item" data-nav="3">Columns</li>
                                     </ul>
                                 </div>
+                                <!-- end nav left-column -->
+                                <!-- left content -->
                                 <div class="col-10 bg-white">
+                                    <form class="form" action="">
                                    <section class="content">
                                        <div class="row">
                                            <div class="col-6 border-end p-3">
@@ -136,10 +147,12 @@
                                                </div>
                                                <div class="row">
                                                    <div class="col">
+                                                       <!-- title -->
                                                         <div class="title">
                                                             <div class="title__row"></div>
                                                             <h2 class="title__text">Control Mode</h2>
                                                         </div>
+                                                       <!-- end title -->
                                                        <div class="row pt-3">
                                                            <div class="checkbox mb-3">
                                                                <label class="checkbox__label">
@@ -219,22 +232,99 @@
                                                            <input type="text" class="control__input w-100 px-2" value="16.849">
                                                        </div>
                                                        <div class="col-3 ps-2">
-                                                                       <span class="control__magnitudes">
-                                                                           mL/min
-                                                                       </span>
+                                                           <span class="control__magnitudes">
+                                                               mL/min
+                                                           </span>
                                                        </div>
                                                    </div>
                                                </div>
                                            </div>
-                                           <div class="col-6 p-3"></div>
+                                           <div class="col-6 pt-3 position-relative">
+                                               <!-- title -->
+                                               <div class="title px-3">
+                                                   <div class="title__row"></div>
+                                                   <h2 class="title__text">Control Mode</h2>
+                                               </div>
+                                               <!-- end title -->
+                                               <!-- radio button -->
+                                               <div class="radio-button d-flex justify-content-between align-items-center px-3 pt-4 mb-3">
+                                                   <label class="radio-button__label"><input class="radio-button__item" type="radio" name="settings"> Constant Pressure</label>
+                                                   <label class="radio-button__label"><input class="radio-button__item" type="radio" name="settings"> Ramped Pressure</label>
+                                                   <label class="radio-button__label"><input class="radio-button__item" type="radio" name="settings"> Constant Flow</label>
+                                                   <label class="radio-button__label"><input class="radio-button__item" type="radio" name="settings"> Ramped Flow</label>
+                                               </div>
+                                               <!-- end radio button -->
+                                               <!-- table -->
+                                               <div class="row table">
+                                                   <div class="table__top">
+                                                       <div class="table__header col-1"></div>
+                                                       <div class="table__header col-2">Ramp ##</div>
+                                                       <div class="table__header col-3">Rate, mL/min per min</div>
+                                                       <div class="table__header col-2">Value, mL/min</div>
+                                                       <div class="table__header col-2">Hold Time, min</div>
+                                                       <div class="table__header col-2">Run Time, min</div>
+                                                   </div>
+                                                   <div class="table__body">
+                                                       <div class="table__row row">
+                                                           <div class="table__item table__item--center col-1"></div>
+                                                           <div class="table__item table__item--center col-2">(Initial)</div>
+                                                           <div class="table__item col-3"></div>
+                                                           <div class="table__item col-2">16.849</div>
+                                                           <div class="table__item col-2">0</div>
+                                                           <div class="table__item col-2">0</div>
+                                                       </div>
+                                                       <div class="table__row row">
+                                                           <div class="table__item table__item--center col-1"><input class="table__checkbox" type="radio" name="table" value="1"></div>
+                                                           <div class="table__item table__item--center col-2">Ramp 1</div>
+                                                           <div class="table__item col-3">10</div>
+                                                           <div class="table__item col-2">16.849</div>
+                                                           <div class="table__item col-2">0</div>
+                                                           <div class="table__item col-2">0</div>
+                                                       </div>
+                                                       <div class="table__row row">
+                                                           <div class="table__item table__item--center col-1"><input class="table__checkbox" type="radio" name="table" value="1"></div>
+                                                           <div class="table__item table__item--center col-2">Ramp 2</div>
+                                                           <div class="table__item col-3">20</div>
+                                                           <div class="table__item col-2">16.849</div>
+                                                           <div class="table__item col-2">0</div>
+                                                           <div class="table__item col-2">26</div>
+                                                       </div>
+                                                   </div>
+                                                   <!-- table -->
+                                               </div>
+                                               <div class="button button-position">
+                                                   <button class="button__item button__grafick"><img class="button__img" src="./images/grafik.svg" alt="grafik"></button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="footer-form">
+                                           <div class="footer-form__left">
+                                               <button class="footer-form__left-item me-3">
+                                                   <img class="footer-form__left-img footer-form__left-img--new" src="./images/plus.png" alt="plus">
+                                                   <span class="footer-form__left-text">New</span>
+                                               </button>
+                                               <button class="footer-form__left-item">
+                                                   <img class="footer-form__left-img footer-form__left-img--new" src="./images/tochki.svg" alt="tochki">
+                                                   <span class="footer-form__left-text">Open</span>
+                                               </button>
+                                           </div>
+                                           <div class="footer-form__right button">
+                                               <button class="button__item">Save</button>
+                                               <button class="button__item">Save as</button>
+                                               <button class="button__item button__item-cancel">Cancel</button>
+                                           </div>
                                        </div>
                                    </section>
+                                    </form>
                                 </div>
+                                <!-- end left content -->
                             </div>
                         </div>
                     </div>
+                    <!-- end left content -->
                 </div>
             </main>
+            <!-- end main -->
         </div>
     </div>
     <script src="js/main.min.js"></script>
